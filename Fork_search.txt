@@ -1,2 +1,1 @@
-No way 
-If you make changes in a forked repository, those changes do NOT affect the original repository automatically.
+A fork is an independent copy of a repository, so any edits made in a fork do not affect the original repository by default. Changes in a fork can only reach the original repository in two cases: either you already have write/admin permission to the original repository (in which case forking is unnecessary and you can push directly), or you submit a pull request from your fork and the original repository’s maintainers approve and merge it. Without permissions or a merged pull request, it is not possible for a fork to modify the original repository.
