@@ -1,0 +1,2 @@
+No way 
+If you make changes in a forked repository, those changes do NOT affect the original repository automatically.
