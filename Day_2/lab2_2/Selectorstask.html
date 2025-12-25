@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors task </title>
+    <style>
+        /* 1- select p elements and make them red */
+        p {
+            color: red;
+        }
+         /* 2- select p and div elements */
+        p , div {
+            color: blue;
+        }
+        /* 3- select p with class mainClass direct child for div with id myDiv and make it styled */
+        #myDiv > p.mainClass {
+            color: green;
+        }
+        /* 4- select all p inside div and style them */
+        div p {
+            color: chocolate;
+        }
+        /* 5- select input with type text element with class myClass */
+        input[type="text"].MyClass {
+            background-color: red;
+        }
+        /* 6- select span elements after div  */
+        div + span {                 /* this just one span element after div */
+            color: red;
+        }
+        div ~ span {                 /* this all span elements after div */
+            color: red;
+        }
+        /* 7- select p with class myClass   */
+        p.myclas {     
+            color: yellowgreen;
+        }
+        /* 8- select div with id myDiv */
+        div#myDiv {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+        <!-- 1- select p elements and make them red -->
+        <!-------------------------------------------->
+        <!--  <p>This a Pragraph</p>                -->
+
+        <!-------------------------------------------->
+        <!-- 2- select p and div element            -->
+        <!-------------------------------------------->
+        <!--  
+            <p>This a Pragraph</p>              
+            <div>This Div</div>                   
+        -->
+
+        <!--------------------------------------------------------------------------------------------->
+        <!-- 3- select p with class mainClass direct child for div with id myDiv and make it styled  -->
+        <!--------------------------------------------------------------------------------------------->
+        <!--
+            <div id="myDiv">
+            <p class="mainClass"> This a Pragraph </p>
+            <p>Pragraph without name class</p>
+            </div>
+        -->
+        <!------------------------------------------------>
+        <!-- 4- select all p inside div and style them  -->
+        <!------------------------------------------------>
+            <!-- <div>
+                <p>Paragraph one</p>
+                <div>
+                    <p>Paragraph Two</p>
+                </div>
+                <div>
+                    <p>Paragraph Three</p>
+                </div>
+                <section>
+                    <p>Paragraph inside Section</p>
+                </section>
+            </div> -->
+        <!---------------------------------------------------------------->
+        <!-- 5- select input with type text element with class myClass  -->
+        <!---------------------------------------------------------------->
+
+        <!-- <label>This an Input filed MyClass</label>
+        <input type="text" class="MyClass">
+        <label>This an Input filed Any Class</label>
+        <input type="text" class="Any"> -->
+
+        <!----------------------------------------->
+        <!-- 6- select span elements after div   -->
+        <!----------------------------------------->
+        <!-- <div>
+            <span>This Div</span>
+        </div>
+        <span>This Span 1 after Div</span> <br>
+        <span>This Span 2 after Div</span> -->
+        <!----------------------------------------->
+        <!-- 7- select p with class myClass      -->
+        <!----------------------------------------->
+        <!-- <p class="myclas">P myclas 1</p>
+        <p class="myclas">P myclas 2</p>
+        <p class="myclas">P myclas 3</p>
+        <h1 class="myclas">this myclas header</h1> -->
+        <!----------------------------------------->
+        <!--   8- select div with id myDiv       -->
+        <!----------------------------------------->
+        <div>
+            this normal Div
+        </div>
+        <div id="myDiv">
+            this Div with muDiv ID
+        </div>
+    
+</body>
+</html>
